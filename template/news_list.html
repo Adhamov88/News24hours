@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for news in news_list%}
+    <li><a href="{%url 'detail_list' news.pk%}">{{news.title}}</a></li>
+{%endfor%}
+
+</body>
+</html>
